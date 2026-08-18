@@ -1,0 +1,579 @@
+{
+  "project_title": "Telecom Churn Driver Discovery & Persona Profiler",
+  "subtitle": "Customer Churn Analysis, Driver Discovery and Persona Profiling",
+  "metrics": {
+    "accuracy": 0.7984,
+    "precision": 0.6347,
+    "recall": 0.5668,
+    "f1_score": 0.5989,
+    "roc_auc": 0.8281,
+    "confusion_matrix": [
+      [
+        913,
+        122
+      ],
+      [
+        162,
+        212
+      ]
+    ],
+    "test_sample_size": 1409
+  },
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.001,
+      "tpr": 0.0187
+    },
+    {
+      "fpr": 0.0039,
+      "tpr": 0.1096
+    },
+    {
+      "fpr": 0.0068,
+      "tpr": 0.1337
+    },
+    {
+      "fpr": 0.0367,
+      "tpr": 0.2754
+    },
+    {
+      "fpr": 0.0696,
+      "tpr": 0.3904
+    },
+    {
+      "fpr": 0.0889,
+      "tpr": 0.4652
+    },
+    {
+      "fpr": 0.1179,
+      "tpr": 0.5668
+    },
+    {
+      "fpr": 0.1488,
+      "tpr": 0.6123
+    },
+    {
+      "fpr": 0.1691,
+      "tpr": 0.6417
+    },
+    {
+      "fpr": 0.1932,
+      "tpr": 0.6711
+    },
+    {
+      "fpr": 0.2396,
+      "tpr": 0.7433
+    },
+    {
+      "fpr": 0.2734,
+      "tpr": 0.7754
+    },
+    {
+      "fpr": 0.286,
+      "tpr": 0.7781
+    },
+    {
+      "fpr": 0.3401,
+      "tpr": 0.8209
+    },
+    {
+      "fpr": 0.3643,
+      "tpr": 0.8262
+    },
+    {
+      "fpr": 0.3826,
+      "tpr": 0.8583
+    },
+    {
+      "fpr": 0.4019,
+      "tpr": 0.8663
+    },
+    {
+      "fpr": 0.43,
+      "tpr": 0.877
+    },
+    {
+      "fpr": 0.4444,
+      "tpr": 0.8957
+    },
+    {
+      "fpr": 0.4464,
+      "tpr": 0.8957
+    },
+    {
+      "fpr": 0.456,
+      "tpr": 0.8957
+    },
+    {
+      "fpr": 0.5256,
+      "tpr": 0.9385
+    },
+    {
+      "fpr": 0.5546,
+      "tpr": 0.9439
+    },
+    {
+      "fpr": 0.5981,
+      "tpr": 0.9626
+    },
+    {
+      "fpr": 0.6232,
+      "tpr": 0.9706
+    },
+    {
+      "fpr": 0.6454,
+      "tpr": 0.9706
+    },
+    {
+      "fpr": 0.7633,
+      "tpr": 0.9893
+    },
+    {
+      "fpr": 0.7923,
+      "tpr": 0.992
+    },
+    {
+      "fpr": 0.9787,
+      "tpr": 0.9973
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "depth_tuning": [
+    {
+      "depth": 2,
+      "train_acc": 76.54,
+      "test_acc": 75.09
+    },
+    {
+      "depth": 3,
+      "train_acc": 79.14,
+      "test_acc": 78.21
+    },
+    {
+      "depth": 4,
+      "train_acc": 79.61,
+      "test_acc": 79.21
+    },
+    {
+      "depth": 5,
+      "train_acc": 80.28,
+      "test_acc": 79.84
+    },
+    {
+      "depth": 6,
+      "train_acc": 80.88,
+      "test_acc": 79.7
+    },
+    {
+      "depth": 7,
+      "train_acc": 81.66,
+      "test_acc": 79.77
+    },
+    {
+      "depth": 8,
+      "train_acc": 82.59,
+      "test_acc": 78.14
+    },
+    {
+      "depth": 9,
+      "train_acc": 83.05,
+      "test_acc": 78.42
+    },
+    {
+      "depth": 10,
+      "train_acc": 83.56,
+      "test_acc": 78.0
+    }
+  ],
+  "feature_importances": [
+    {
+      "feature": "Contract_Month-to-month",
+      "importance": 0.5175,
+      "percentage": 51.75
+    },
+    {
+      "feature": "InternetService_Fiber optic",
+      "importance": 0.1644,
+      "percentage": 16.44
+    },
+    {
+      "feature": "tenure",
+      "importance": 0.155,
+      "percentage": 15.5
+    },
+    {
+      "feature": "MonthlyCharges",
+      "importance": 0.0385,
+      "percentage": 3.85
+    },
+    {
+      "feature": "TotalCharges",
+      "importance": 0.0331,
+      "percentage": 3.31
+    },
+    {
+      "feature": "PaymentMethod_Electronic check",
+      "importance": 0.0281,
+      "percentage": 2.81
+    },
+    {
+      "feature": "TechSupport_No",
+      "importance": 0.0215,
+      "percentage": 2.15
+    },
+    {
+      "feature": "OnlineBackup_No",
+      "importance": 0.0093,
+      "percentage": 0.93
+    },
+    {
+      "feature": "OnlineSecurity_No",
+      "importance": 0.0087,
+      "percentage": 0.87
+    },
+    {
+      "feature": "Contract_One year",
+      "importance": 0.0083,
+      "percentage": 0.83
+    },
+    {
+      "feature": "SeniorCitizen_enc",
+      "importance": 0.0049,
+      "percentage": 0.49
+    },
+    {
+      "feature": "Contract_Two year",
+      "importance": 0.0035,
+      "percentage": 0.35
+    },
+    {
+      "feature": "StreamingMovies_Yes",
+      "importance": 0.0025,
+      "percentage": 0.25
+    },
+    {
+      "feature": "PaymentMethod_Mailed check",
+      "importance": 0.0025,
+      "percentage": 0.25
+    },
+    {
+      "feature": "Dependents_enc",
+      "importance": 0.0023,
+      "percentage": 0.23
+    }
+  ],
+  "feature_names": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "gender_enc",
+    "SeniorCitizen_enc",
+    "Partner_enc",
+    "Dependents_enc",
+    "PhoneService_enc",
+    "PaperlessBilling_enc",
+    "MultipleLines_No",
+    "MultipleLines_No phone service",
+    "MultipleLines_Yes",
+    "InternetService_DSL",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "OnlineSecurity_No",
+    "OnlineSecurity_No internet service",
+    "OnlineSecurity_Yes",
+    "OnlineBackup_No",
+    "OnlineBackup_No internet service",
+    "OnlineBackup_Yes",
+    "DeviceProtection_No",
+    "DeviceProtection_No internet service",
+    "DeviceProtection_Yes",
+    "TechSupport_No",
+    "TechSupport_No internet service",
+    "TechSupport_Yes",
+    "StreamingTV_No",
+    "StreamingTV_No internet service",
+    "StreamingTV_Yes",
+    "StreamingMovies_No",
+    "StreamingMovies_No internet service",
+    "StreamingMovies_Yes",
+    "Contract_Month-to-month",
+    "Contract_One year",
+    "Contract_Two year",
+    "PaymentMethod_Bank transfer (automatic)",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check"
+  ],
+  "eda_stats": {
+    "total_customers": 7043,
+    "total_features": 21,
+    "churned_customers": 1869,
+    "retained_customers": 5174,
+    "churn_rate": 26.54,
+    "numerical_features": 3,
+    "categorical_features": 17,
+    "tenure_mean": 32.37,
+    "tenure_median": 29.0,
+    "monthly_charges_mean": 64.76,
+    "total_charges_mean": 2279.73,
+    "by_contract": {
+      "Month-to-month": {
+        "churn_rate": 42.71,
+        "retained_rate": 57.29,
+        "churn_count": 1655,
+        "retained_count": 2220,
+        "total_count": 3875
+      },
+      "One year": {
+        "churn_rate": 11.27,
+        "retained_rate": 88.73,
+        "churn_count": 166,
+        "retained_count": 1307,
+        "total_count": 1473
+      },
+      "Two year": {
+        "churn_rate": 2.83,
+        "retained_rate": 97.17,
+        "churn_count": 48,
+        "retained_count": 1647,
+        "total_count": 1695
+      }
+    },
+    "by_internet": {
+      "DSL": {
+        "churn_rate": 18.96,
+        "retained_rate": 81.04,
+        "churn_count": 459,
+        "retained_count": 1962,
+        "total_count": 2421
+      },
+      "Fiber optic": {
+        "churn_rate": 41.89,
+        "retained_rate": 58.11,
+        "churn_count": 1297,
+        "retained_count": 1799,
+        "total_count": 3096
+      },
+      "No": {
+        "churn_rate": 7.4,
+        "retained_rate": 92.6,
+        "churn_count": 113,
+        "retained_count": 1413,
+        "total_count": 1526
+      }
+    },
+    "by_tenure_cohort": {
+      "0-12 Mo": {
+        "churn_rate": 47.44,
+        "retained_rate": 52.56,
+        "churn_count": 1037,
+        "retained_count": 1149,
+        "total_count": 2186
+      },
+      "13-24 Mo": {
+        "churn_rate": 28.71,
+        "retained_rate": 71.29,
+        "churn_count": 294,
+        "retained_count": 730,
+        "total_count": 1024
+      },
+      "25-36 Mo": {
+        "churn_rate": 21.63,
+        "retained_rate": 78.37,
+        "churn_count": 180,
+        "retained_count": 652,
+        "total_count": 832
+      },
+      "37-48 Mo": {
+        "churn_rate": 19.03,
+        "retained_rate": 80.97,
+        "churn_count": 145,
+        "retained_count": 617,
+        "total_count": 762
+      },
+      "49-60 Mo": {
+        "churn_rate": 14.42,
+        "retained_rate": 85.58,
+        "churn_count": 120,
+        "retained_count": 712,
+        "total_count": 832
+      },
+      "61-72 Mo": {
+        "churn_rate": 6.61,
+        "retained_rate": 93.39,
+        "churn_count": 93,
+        "retained_count": 1314,
+        "total_count": 1407
+      }
+    },
+    "by_charge_cohort": {
+      "<$35 (Basic)": {
+        "churn_rate": 10.89,
+        "retained_rate": 89.11,
+        "churn_count": 189,
+        "retained_count": 1546,
+        "total_count": 1735
+      },
+      "$35-$65 (Mid)": {
+        "churn_rate": 23.14,
+        "retained_rate": 76.86,
+        "churn_count": 326,
+        "retained_count": 1083,
+        "total_count": 1409
+      },
+      "$65-$85 (High)": {
+        "churn_rate": 35.89,
+        "retained_rate": 64.11,
+        "churn_count": 614,
+        "retained_count": 1097,
+        "total_count": 1711
+      },
+      ">$85 (Premium)": {
+        "churn_rate": 33.82,
+        "retained_rate": 66.18,
+        "churn_count": 740,
+        "retained_count": 1448,
+        "total_count": 2188
+      }
+    },
+    "by_payment": {
+      "Bank transfer (automatic)": {
+        "churn_rate": 16.71,
+        "retained_rate": 83.29,
+        "churn_count": 258,
+        "retained_count": 1286,
+        "total_count": 1544
+      },
+      "Credit card (automatic)": {
+        "churn_rate": 15.24,
+        "retained_rate": 84.76,
+        "churn_count": 232,
+        "retained_count": 1290,
+        "total_count": 1522
+      },
+      "Electronic check": {
+        "churn_rate": 45.29,
+        "retained_rate": 54.71,
+        "churn_count": 1071,
+        "retained_count": 1294,
+        "total_count": 2365
+      },
+      "Mailed check": {
+        "churn_rate": 19.11,
+        "retained_rate": 80.89,
+        "churn_count": 308,
+        "retained_count": 1304,
+        "total_count": 1612
+      }
+    },
+    "by_tech_support": {
+      "No": {
+        "churn_rate": 41.64,
+        "retained_rate": 58.36,
+        "churn_count": 1446,
+        "retained_count": 2027,
+        "total_count": 3473
+      },
+      "No internet service": {
+        "churn_rate": 7.4,
+        "retained_rate": 92.6,
+        "churn_count": 113,
+        "retained_count": 1413,
+        "total_count": 1526
+      },
+      "Yes": {
+        "churn_rate": 15.17,
+        "retained_rate": 84.83,
+        "churn_count": 310,
+        "retained_count": 1734,
+        "total_count": 2044
+      }
+    },
+    "by_online_security": {
+      "No": {
+        "churn_rate": 41.77,
+        "retained_rate": 58.23,
+        "churn_count": 1461,
+        "retained_count": 2037,
+        "total_count": 3498
+      },
+      "No internet service": {
+        "churn_rate": 7.4,
+        "retained_rate": 92.6,
+        "churn_count": 113,
+        "retained_count": 1413,
+        "total_count": 1526
+      },
+      "Yes": {
+        "churn_rate": 14.61,
+        "retained_rate": 85.39,
+        "churn_count": 295,
+        "retained_count": 1724,
+        "total_count": 2019
+      }
+    },
+    "by_senior": {
+      "0": {
+        "churn_rate": 23.61,
+        "retained_rate": 76.39,
+        "churn_count": 1393,
+        "retained_count": 4508,
+        "total_count": 5901
+      },
+      "1": {
+        "churn_rate": 41.68,
+        "retained_rate": 58.32,
+        "churn_count": 476,
+        "retained_count": 666,
+        "total_count": 1142
+      }
+    },
+    "by_family": {
+      "Dependents Only": {
+        "churn_rate": 21.33,
+        "retained_rate": 78.67,
+        "churn_count": 77,
+        "retained_count": 284,
+        "total_count": 361
+      },
+      "Partner & Dependents": {
+        "churn_rate": 14.24,
+        "retained_rate": 85.76,
+        "churn_count": 249,
+        "retained_count": 1500,
+        "total_count": 1749
+      },
+      "Partner Only": {
+        "churn_rate": 25.41,
+        "retained_rate": 74.59,
+        "churn_count": 420,
+        "retained_count": 1233,
+        "total_count": 1653
+      },
+      "Solo (No Partner, No Dependents)": {
+        "churn_rate": 34.24,
+        "retained_rate": 65.76,
+        "churn_count": 1123,
+        "retained_count": 2157,
+        "total_count": 3280
+      }
+    }
+  },
+  "tree_rules": "|--- Contract_Month-to-month <= 0.50\n|   |--- MonthlyCharges <= 93.67\n|   |   |--- OnlineSecurity_No <= 0.50\n|   |   |   |--- Contract_Two year <= 0.50\n|   |   |   |   |--- MonthlyCharges <= 72.17\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- MonthlyCharges >  72.17\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- Contract_Two year >  0.50\n|   |   |   |   |--- OnlineBackup_No <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- OnlineBackup_No >  0.50\n|   |   |   |   |   |--- class: 0\n|   |   |--- OnlineSecurity_No >  0.50\n|   |   |   |--- Contract_Two year <= 0.50\n|   |   |   |   |--- PaymentMethod_Mailed check <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- PaymentMethod_Mailed check >  0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- Contract_Two year >  0.50\n|   |   |   |   |--- MonthlyCharges <= 54.47\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- MonthlyCharges >  54.47\n|   |   |   |   |   |--- class: 0\n|   |--- MonthlyCharges >  93.67\n|   |   |--- Contract_One year <= 0.50\n|   |   |   |--- TotalCharges <= 7755.60\n|   |   |   |   |--- MonthlyCharges <= 105.92\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- MonthlyCharges >  105.92\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- TotalCharges >  7755.60\n|   |   |   |   |--- class: 0\n|   |   |--- Contract_One year >  0.50\n|   |   |   |--- StreamingMovies_Yes <= 0.50\n|   |   |   |   |--- tenure <= 53.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- tenure >  53.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- StreamingMovies_Yes >  0.50\n|   |   |   |   |--- Dependents_enc <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- Dependents_enc >  0.50\n|   |   |   |   |   |--- class: 0\n|--- Contract_Month-to-month >  0.50\n|   |--- InternetService_Fiber optic <= 0.50\n|   |   |--- tenure <= 3.50\n|   |   |   |--- TechSupport_No <= 0.50\n|   |   |   |   |--- TotalCharges <= 21.00\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- TotalCharges >  21.00\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- TechSupport_No >  0.50\n|   |   |   |   |--- SeniorCitizen_enc <= 0.50\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- SeniorCitizen_enc >  0.50\n|   |   |   |   |   |--- class: 1\n|   |   |--- tenure >  3.50\n|   |   |   |--- PaymentMethod_Electronic check <= 0.50\n|   |   |   |   |--- OnlineSecurity_No <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- OnlineSecurity_No >  0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- PaymentMethod_Electronic check >  0.50\n|   |   |   |   |--- OnlineBackup_No <= 0.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- OnlineBackup_No >  0.50\n|   |   |   |   |   |--- class: 0\n|   |--- InternetService_Fiber optic >  0.50\n|   |   |--- tenure <= 13.50\n|   |   |   |--- TotalCharges <= 120.00\n|   |   |   |   |--- MonthlyCharges <= 69.92\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- MonthlyCharges >  69.92\n|   |   |   |   |   |--- class: 1\n|   |   |   |--- TotalCharges >  120.00\n|   |   |   |   |--- MonthlyCharges <= 78.20\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- MonthlyCharges >  78.20\n|   |   |   |   |   |--- class: 1\n|   |   |--- tenure >  13.50\n|   |   |   |--- PaymentMethod_Electronic check <= 0.50\n|   |   |   |   |--- tenure <= 51.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |   |--- tenure >  51.50\n|   |   |   |   |   |--- class: 0\n|   |   |   |--- PaymentMethod_Electronic check >  0.50\n|   |   |   |   |--- TotalCharges <= 3078.40\n|   |   |   |   |   |--- class: 1\n|   |   |   |   |--- TotalCharges >  3078.40\n|   |   |   |   |   |--- class: 0\n",
+  "model_parameters": {
+    "algorithm": "DecisionTreeClassifier",
+    "criterion": "gini",
+    "max_depth": 5,
+    "min_samples_split": 25,
+    "min_samples_leaf": 15,
+    "test_split": 0.2,
+    "random_state": 42
+  }
+}
